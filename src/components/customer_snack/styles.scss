@@ -1,0 +1,25 @@
+@media (max-width: 500px) {
+  .pagination-slider {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .pagination-container {
+    height: 500px !important;
+  }
+
+  .pagination-tab{
+    border-bottom: 4px solid transparent;
+  }
+
+  .slider-page-content {
+    flex-direction: column;
+    border-bottom-color: #00754A!important;
+
+    > img,
+    > div {
+      width: 100% !important;
+    }
+  }
+}
