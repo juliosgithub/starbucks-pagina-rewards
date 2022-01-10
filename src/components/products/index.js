@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import imgA from "../../images/1-fun-freebies.webp";
 import imgB from "../../images/2-order-and-pay-ahead.webp";
 import imgC from "../../images/3-get-to-free-faster.webp";
-// import "./styles.scss";
+import "./styles.scss";
 
 const Products = ({ siteTitle }) => (
   <section class="section container" id="products">
@@ -14,7 +14,7 @@ const Products = ({ siteTitle }) => (
       and—yes, free coffee.
     </p>
 
-    <div class="products__container grid">
+    <div class="products__container  ">
       <article class="products__card">
         <img src={imgA} alt="" class="products__img" />
 

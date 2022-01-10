@@ -8,7 +8,6 @@ import imgE from "../../images/SwiperMenu/e.webp";
 import "./styles.scss";
 
 const styles = {
-  // ESTILIZAÇÃO INLINE APENAS PARA ISOLAR DO CÓDIGO SCSS DESORGANIZADO E EVITAR COLISÕES
   header: {
     width: "100%",
     backgroundColor: "#F1F8F5",
@@ -26,7 +25,7 @@ const styles = {
   },
   tab: {
     fontWeight: "500",
-    fontSize: "1.675rem",
+    fontSize: "1.24rem",
     fontFamily: "Roboto",
     width: "108px",
     maxWidth: "108px",
@@ -52,7 +51,7 @@ const styles = {
     transition: ".3s",
   },
   star: {
-    fontSize: "1.125rem",
+    fontSize: "1.1rem",
     color: "#CBA258",
   },
   pagination: {
@@ -75,11 +74,11 @@ const styles = {
     transition: ".4s",
   },
   image: {
-    width: "50%",
+    width: "40%",
     transform: "scale(1.35)",
   },
   content: {
-    width: "50%",
+    width: "60%",
   },
   paragraph: {
     fontSize: ".9rem",
@@ -113,7 +112,10 @@ const Customer = ({ siteTitle }) => {
           {headerValues.map((value) => (
             <div
               key={value}
-              style={{ ...styles.tab, borderBottomColor: sliderPosition === positions[value] ? "#00754A" : "transparent" }}
+              style={{
+                ...styles.tab,
+                borderBottomColor: sliderPosition === positions[value] ? "#00754A" : "transparent",
+              }}
               onClick={() => {
                 setSliderPosition(positions[value]);
               }}
@@ -137,23 +139,6 @@ const Customer = ({ siteTitle }) => {
           <Page page={page} currentPageByPosition={sliderPosition} />
         ))}
       </main>
-
-      {/* <div class="customer_content">
-        <div class="thumb_customer">
-          <section>
-            <div>
-              <img src={coffee} alt="" />{" "}
-            </div>
-            <div class="description">
-              <h2>Customize your drink</h2>
-              <p>
-                Earn Stars and get rewarded in a few easy steps. Earn Stars and get rewarded in a few easy steps.Earn
-                Stars and get rewarded in a few easy steps.
-              </p>
-            </div>
-          </section>
-        </div>
-      </div> */}
     </section>
   );
 };

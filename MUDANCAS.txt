@@ -1,0 +1,77 @@
+MUDANCAS
+
+NAVBAR
+
+-precisa da barra verde abaixo de "REWARDS"
+-precisa a ter a mesma altura
+-(navbar verde) precisa ter o mesmo comportamento, e acompanhar o scroll (subida/descida)
+
+---
+
+section "free coffee..."
+
+a frase "Free coffee..." quando em mobile version, precisa ser menor e em apenas duas linhas.
+
+-botao precisa ser "Join in the app"
+-falta o botao "or join online"
+-falta a imagem da estrela no modo mobile (deve aparecer, mesmo tamanho, -mas a posicao pode variar)
+
+---
+
+section "getting start is easy"
+
+-subtext precisa ser igual
+-cada ponto (1, 2 e 3) precisam ter o mesmo titulo e tamanho da fonte
+-texto deve ter mesmo alinhamento (nao pode quebrar e ficar abaixo do circulo)
+
+---
+
+section "get your favorites..."
+
+-cada botao do menu (25, 50, 150...) deve ficar alinhado na horizontal apenas e o menu deve pegar toda a width disponivel
+-RECOMENDAVEL: a linha verde deve "correr" quando voce clica em uma das opcoes.
+-item que é exibido quando voce clica (imagem+titulo+texto): aumentar imagem, centralizar titulo e reduzir a fonte, e o texto precisa pegar mais espaco disponivel da width para reduzir o numero de linhas usadas.
+
+---
+
+section "endless extra"
+
+-reduzir fonte do texto "Joining startbucks rewards means..."
+-aumentar tamanho dos icones, deixar os titulos em negrito e deixar os textos alinhados na esquerda sem quebras, assim como o link "learn more"
+
+---
+
+section "cash or card..."
+
+-corrigir texto no topo e reduzir a fonte
+-cada bloco: "x stars per dollar"
+reduzir fonte de titulo e textos
+items nao sao os mesmos do site
+-padding na versao desktop
+
+---
+
+section Star codes
+
+-observar fontes
+-input text deve ser o mesmo (fazer até dia 11 - 10h)
+-texto no submit deve ser centralizado
+
+---
+
+section "earning stars"
+
+-reduzir fonte e padding lateral
+-terms of use: falta um link
+-faltam benefits e redeeming
+
+---
+
+footer menu
+
+falta dropdown para cada menu
+desktop: aumentar a margem entre cada link na vertical
+
+footer deve ser igual
+
+desktop: barra horizontal nao toca nas laterais - tenta deixar as mesmas distacias igual ao original

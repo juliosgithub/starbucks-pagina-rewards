@@ -1,0 +1,41 @@
+.container {
+  max-width: 1366px; /*primeira alt.*/
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.p_description {
+  margin: -2rem auto 2rem auto;
+  max-width: 560px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* é apenas o padding  */
+.section {
+  padding: 6.5rem 0 1rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.section__title::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 67px;
+  height: 1px;
+  background-color: hsl(143, 44%, 40%);
+}

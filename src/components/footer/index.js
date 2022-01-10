@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.scss";
 import sportify from "../../images/social-spotify.svg";
 import facebook from "../../images/social-facebook.svg";
 import spotify from "../../images/social-spotify.svg";

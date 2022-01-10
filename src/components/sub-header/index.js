@@ -7,19 +7,13 @@ import "./styles.scss";
 const SubHeader = ({ siteTitle }) => (
   // <!-- ============ SUB HEADER ======= -->
   <section className="sub-header-bar">
-    <div id="clicl" className="container sub-header-content">
-      <p className="">STARBUCKS® REWARDS</p>
+    <div className="container sub-header-content">
+      <p>
+        STARBUCKS <span className="sub-header-copy">®</span> REWARDS
+      </p>
       <button className="shc-btn"> Join in the app</button>
     </div>
   </section>
 );
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// };
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// };
 
 export default SubHeader;

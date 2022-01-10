@@ -3,6 +3,7 @@ import Aimg from "../../images/1acell.png";
 import Bimg from "../../images/1bcell.png";
 import Cimg from "../../images/2a.png";
 import Dimg from "../../images/3a.png";
+import "./styles.scss";
 
 const Payments = ({ siteTitle }) => (
   <section class="payment">
@@ -12,7 +13,7 @@ const Payments = ({ siteTitle }) => (
       Rewards.
     </p>
 
-    <div class=" pay_box_flex">
+    <div class="pay_box_flex">
       <div class="box">
         <h3>
           1<span className="star_size">★</span>Star per dollar{" "}

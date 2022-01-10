@@ -1,0 +1,60 @@
+/*=============== FEATURED ===============*/
+.featured__container {
+  row-gap: 2.5rem;
+  display: grid;
+  margin-bottom: 2.5rem;
+}
+.section_featured {
+  background-color: #fff;
+}
+.featured_description {
+  text-align: center;
+  line-height: 1.5;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+}
+
+.featured__card {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem 1rem;
+
+  overflow-y: hidden;
+  transition: 0.3s;
+}
+
+.featured__img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.featured__title,
+.featured__description {
+  font-size: 1.25rem;
+}
+
+.featured__title {
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.featured__description {
+  display: block;
+  padding: 0 19px;
+  color: hsl(0, 0%, 35%);
+  transition: 0.3s;
+}
+
+.featured__button {
+  font-size: 0.875rem;
+  transform: translateY(1rem);
+  opacity: 0;
+}
+
+.featured__title,
+.featured__description {
+  font-size: 1rem;
+}

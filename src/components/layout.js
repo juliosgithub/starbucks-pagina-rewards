@@ -10,14 +10,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import SubHeader from "./sub-header";
-import HomeSection from "./section-home";
-import Featured from "./featured";
-import Customer from "./customer_snack";
-import Products from "./products";
-import Payments from "./payment";
-import Newsletter from "./newsletter";
-import TermsAndPrivacy from "./Terms";
-import Footer from "./footer";
 
 import "./layout.scss";
 
@@ -36,17 +28,8 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <SubHeader />
-      <HomeSection />
-      <Featured />
-      <Customer />
-      <Products />
-      <Payments />
-      <Newsletter />
-      <TermsAndPrivacy />
-      <Footer />
 
       <main>{children}</main>
-      <footer></footer>
     </>
   );
 };

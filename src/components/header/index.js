@@ -4,9 +4,10 @@ import { Link } from "gatsby";
 import "./styles.scss";
 
 import logo from "../../images/logo.svg";
+import map from "../../images/map.png";
 
 const Header = ({ siteTitle }) => {
-  const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false)
+  const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false);
   return (
     <header className="header" id="header">
       {/* --------- NAVMENU ---------- */}
@@ -42,7 +43,7 @@ const Header = ({ siteTitle }) => {
           <li>
             {" "}
             <a href="#" className="nav__btns_find">
-              <i className="bx bxs-map"></i> Find a Store{" "}
+              <img src={map} width="13px" alt="" /> Find a Store{" "}
             </a>
           </li>
 
@@ -58,7 +59,12 @@ const Header = ({ siteTitle }) => {
         </div>
 
         <div className="nav__toggle" id="nav-toggle">
-          <button type="button" className="hamburger" id="menu-btn" onClick={() => setIsMenuMobileOpen(!isMenuMobileOpen)}>
+          <button
+            type="button"
+            className="hamburger"
+            id="menu-btn"
+            onClick={() => setIsMenuMobileOpen(!isMenuMobileOpen)}
+          >
             <span className="hamburger-top"></span>
             <span className="hamburger-middle"></span>
             <span className="hamburger-bottom"></span>
@@ -68,18 +74,20 @@ const Header = ({ siteTitle }) => {
 
       {/* MENU MOBILE - SMARTHPONES, IPADS...  */}
 
-      <div className="nav-mobile" id="nav-mobile" style={{right: isMenuMobileOpen ? 0 : '-100%'}}>
+      <div className="nav-mobile" id="nav-mobile" style={{ right: isMenuMobileOpen ? 0 : "-100%" }}>
         <ul className="nav__list">
           <li className="nav__item">
             <a href="#home" className="nav__link ">
               Menu
             </a>
-          </li>
+          </li>{" "}
+          <br />
           <li className="nav__item">
             <a href="#featured" className="nav__link">
               Rewards
             </a>{" "}
-          </li>
+          </li>{" "}
+          <br />
           <li className="nav__item">
             <a href="#products" className="nav__link">
               Gift Card
@@ -93,16 +101,16 @@ const Header = ({ siteTitle }) => {
           {" "}
           <a href="">Sign in</a>{" "}
         </button>
-        <br />{" "}
+        <br /> <br />
         <button className="btn btn-dark">
           {" "}
           <a href="">Join now</a>{" "}
         </button>
-        <br />{" "}
+        <br /> <br />
         <li>
           {" "}
           <a href="#" className="nav__btns_find">
-            <i className="bx bxs-map"></i> Find a Store{" "}
+            <img src={map} width="13px" alt="" /> Find a Store{" "}
           </a>
         </li>
       </div>

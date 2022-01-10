@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-// import "./styles.scss";
+import "./styles.scss";
 import img01 from "../../images/getting-started-1.webp";
 import img02 from "../../images/getting-started-2.webp";
 import img03 from "../../images/getting-started-3.webp";

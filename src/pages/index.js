@@ -1,8 +1,28 @@
 import * as React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 
-const IndexPage = () => <Layout> {"  "}</Layout>;
+import HomeSection from "../components/section-home";
+import Featured from "../components/featured";
+import Customer from "../components/customer_snack";
+import Products from "../components/products";
+import Payments from "../components/payment";
+import Newsletter from "../components/newsletter";
+import TermsAndPrivacy from "../components/Terms";
+import Footer from "../components/footer";
+
+const IndexPage = () => (
+  <Layout>
+    <HomeSection />
+    <Featured />
+    <Customer />
+    <Products />
+    <Payments />
+    <Newsletter />
+    <TermsAndPrivacy />
+    <Footer />
+  </Layout>
+);
 
 export default IndexPage;
