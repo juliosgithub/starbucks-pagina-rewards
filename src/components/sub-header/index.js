@@ -8,7 +8,7 @@ const SubHeader = ({ siteTitle }) => (
   // <!-- ============ SUB HEADER ======= -->
   <section className="sub-header-bar">
     <div className="container sub-header-content">
-      <p>
+      <p className="sub-header-left">
         STARBUCKS <span className="sub-header-copy">®</span> REWARDS
       </p>
       <button className="shc-btn"> Join in the app</button>

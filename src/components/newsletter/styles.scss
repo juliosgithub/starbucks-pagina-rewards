@@ -22,6 +22,9 @@
 .newsletter__description:last-child {
   margin-top: 5rem;
 }
+.t90 {
+  width: 100%;
+}
 
 .newsletter__subscribe {
   display: block;
@@ -63,7 +66,6 @@
   }
   .newsletter__subscribe {
     flex-direction: row;
-    background: salmon;
   }
   .newsletter__input {
     width: 100%;

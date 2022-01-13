@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   color: hsl(0, 0%, 35%);
   /*For animation dark mode*/
   transition: 0.4s;
+  overflow-x: hidden;
 }
 
 ul,
@@ -51,7 +53,10 @@ button {
 }
 .link_green {
   text-decoration: underline;
-  color: #00754a;
+  color: #00a862 !important;
+}
+.link_green:hover {
+  text-decoration: none;
 }
 
 .green {

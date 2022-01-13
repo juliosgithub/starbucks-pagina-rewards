@@ -16,7 +16,9 @@ const Featured = ({ siteTitle }) => (
 
     <div class="featured__container">
       <article class="featured__card">
-        <img src={img01} alt="" class="featured__img" />
+        <div className="img_feature ">
+          <img src={img01} alt="" class="featured__img" />
+        </div>
 
         <div class="featured__data">
           <h3 class="featured__title">Create an account</h3>
@@ -27,14 +29,17 @@ const Featured = ({ siteTitle }) => (
             to get access to the full range of Starbucks® Rewards benefits. You can also{" "}
             <a href="" class="link_green">
               join online.
-            </a>{" "}
-          </span>{" "}
+            </a>
+          </span>
           <br />
         </div>
       </article>
+      {/* ----------------------------------------------------------------------------- */}
 
       <article class="featured__card">
-        <img src={img02} alt="" class="featured__img" />
+        <div className="img_feature ">
+          <img src={img02} alt="" class="featured__img" />
+        </div>
 
         <div class="featured__data">
           <h3 class="featured__title">Order and pay how you’d like</h3>
@@ -47,9 +52,12 @@ const Featured = ({ siteTitle }) => (
           </span>
         </div>
       </article>
+      {/* ----------------------------------------------------------------------------- */}
 
       <article class="featured__card">
-        <img src={img03} alt="" class="featured__img" />
+        <div className="img_feature ">
+          <img src={img03} alt="" class="featured__img" />
+        </div>
 
         <div class="featured__data">
           <h3 class="featured__title">Earn Stars, get Rewards</h3>

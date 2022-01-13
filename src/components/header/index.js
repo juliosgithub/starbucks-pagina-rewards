@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#featured" className="nav__link">
+              <a href="#featured" className="nav__link active-link">
                 Rewards
               </a>{" "}
             </li>

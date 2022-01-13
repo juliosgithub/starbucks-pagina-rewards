@@ -13,7 +13,7 @@ import SubHeader from "./sub-header";
 
 import "./layout.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, objeto }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,6 +30,8 @@ const Layout = ({ children }) => {
       <SubHeader />
 
       <main>{children}</main>
+
+      {/* <h1>{`${objeto.nome} ${objeto.sobrenome}`}</h1> */}
     </>
   );
 };

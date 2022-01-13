@@ -7,148 +7,186 @@ import pinterest from "../../images/social-pinterest.svg";
 import instagram from "../../images/social-instagram.svg";
 import youtube from "../../images/social-youtube.svg";
 import twitter from "../../images/social-twitter.svg";
+import Accordion from "../Accordion";
+import AccordionItem from "../Accordion/AccordionItem";
+
+const footerLinks = {
+  about: [
+    { name: "Our company", link: "#" },
+    { name: "Our coffee", link: "#" },
+    { name: "Stories and News", link: "#" },
+    { name: "Starbucks Archive", link: "#" },
+    { name: "Investor Relations", link: "#" },
+    { name: "Customer Service", link: "#" },
+  ],
+
+  careers: [
+    { name: "Culture and Values", link: "#" },
+    { name: " Inclusion, Diversity, and Equity", link: "#" },
+    { name: "College Achievement Plan", link: "#" },
+    { name: " Alumni CommunitY", link: "#" },
+    { name: "U.S Careers", link: "#" },
+    { name: " International ", link: "#" },
+  ],
+
+  socialImpact: [
+    { name: " People ", link: "#" },
+    { name: " Planet ", link: "#" },
+    { name: `Environmental and Social Impact Reporting`, link: "#" },
+  ],
+  bussinesPartners: [
+    { name: " Landlord Support Center ", link: "#" },
+    { name: " Suppliers ", link: "#" },
+    { name: `Corporate Gift Card Sales`, link: "#" },
+    { name: ` Office and Foodservice Coffee`, link: "#" },
+  ],
+  OrderAndPickup: [
+    { name: " Order on the App  ", link: "#" },
+    { name: " Order on the Web ", link: "#" },
+    { name: `Delivery`, link: "#" },
+    { name: `   Order and Pickup Options`, link: "#" },
+    { name: `  Explore and Find Coffee for Home`, link: "#" },
+  ],
+};
 
 const Footer = ({ siteTitle }) => (
   <footer class="footer">
     <nav class="footer_nav">
-      <div class="footer__content">
-        <h3 class="footer__title">About Us</h3>
+      {/* -------------------DESKTOP--------------- */}
+      <div className="menu-desktop">
+        <div class="footer__content">
+          <h3 class="footer__title">About Us</h3>
 
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">
-              Our Company
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Our Coffee
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Stories and News
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Starbucks Archive
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Investor Relations
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Customer Service
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer__links">
+            {footerLinks["about"].map((item) => (
+              <li>
+                <a href={item.link} class="footer__link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Careers</h3>
+        <div class="footer__content">
+          <h3 class="footer__title">Careers</h3>
 
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">
-              Culture and Values
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Inclusion, Diversity, and Equity
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Alumni Community
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              U.S. Careers
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              International Careers
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer__links">
+            {footerLinks["careers"].map((item) => (
+              <li>
+                <a href={item.link} class="footer__link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Social Impact</h3>
+        <div class="footer__content">
+          <h3 class="footer__title">About Us</h3>
 
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">
-              People
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Planet
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Environmental and Social <br /> Impact Reporting
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer__links">
+            {footerLinks["socialImpact"].map((item) => (
+              <li>
+                <a href={item.link} class="footer__link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">For Business Partners</h3>
+        <div class="footer__content">
+          <h3 class="footer__title">Bussines Partners</h3>
 
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">
-              Landlord Support Center
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Corporate Gift Card Sales
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Office and Foodservice Coffee
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer__links">
+            {footerLinks["bussinesPartners"].map((item) => (
+              <li>
+                <a href={item.link} class="footer__link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Order and Pickup</h3>
+        <div class="footer__content">
+          <h3 class="footer__title">Order and Pickup</h3>
 
-        <ul class="footer__links">
-          <li>
-            <a href="#" class="footer__link">
-              Order on the App
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Delivery
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Order and Pickup Options
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">
-              Explore and Find Coffee for Home
-            </a>
-          </li>
-        </ul>
+          <ul class="footer__links">
+            {footerLinks["OrderAndPickup"].map((item) => (
+              <li>
+                <a href={item.link} class="footer__link">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>{" "}
+      {/* ----------------------MENU MOBILE----- */}
+      <div className="menu-mobile">
+        <Accordion>
+          <AccordionItem title="About">
+            <ul class="footer__links">
+              {footerLinks["about"].map((item) => (
+                <li>
+                  <a href={item.link} class="footer__link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Careers">
+            <ul class="footer__links">
+              {footerLinks["careers"].map((item) => (
+                <li>
+                  <a href={item.link} class="footer__link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Social Impact">
+            <ul class="footer__links">
+              {footerLinks["socialImpact"].map((item) => (
+                <li>
+                  <a href={item.link} class="footer__link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Bussines Partners">
+            <ul class="footer__links">
+              {footerLinks["bussinesPartners"].map((item) => (
+                <li>
+                  <a href={item.link} class="footer__link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+
+          <AccordionItem title="Order and Pickup">
+            <ul class="footer__links">
+              {footerLinks["OrderAndPickup"].map((item) => (
+                <li>
+                  <a href={item.link} class="footer__link">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
+        </Accordion>
       </div>
     </nav>
 
@@ -158,14 +196,13 @@ const Footer = ({ siteTitle }) => (
           <a href="#" target="_blank" class="footer__social-link"></a>
           <a href="#" target="_blank" class="footer__social-link">
             <img src={spotify} alt="facebook" />
-          </a>
+          </a>{" "}
           <a href="#" target="_blank" class="footer__social-link">
             <img src={facebook} alt="facebook" />
           </a>
           <a href="#" target="_blank" class="footer__social-link">
             <img src={pinterest} alt="facebook" />
           </a>
-
           <a href="#" target="_blank" class="footer__social-link">
             <img src={instagram} alt="facebook" />
           </a>

@@ -1,3 +1,4 @@
+//  ========== CONTAINER =======
 .container {
   max-width: 1366px; /*primeira alt.*/
   margin-left: 1.5rem;
@@ -7,15 +8,13 @@
 .grid {
   display: grid;
 }
-
+// -------- description ----
 .p_description {
   margin: -2rem auto 2rem auto;
   max-width: 560px;
   text-align: center;
   line-height: 1.7;
 }
-
-/* é apenas o padding  */
 .section {
   padding: 6.5rem 0 1rem;
 }
@@ -27,15 +26,89 @@
   letter-spacing: 2px;
   text-align: center;
 }
-
-.section__title::before {
-  content: "";
-  position: absolute;
-  top: -1rem;
-  left: 0;
-  right: 0;
+// -----------------------
+// // ------- EXCLUSIVS -------
+// ----------------------------
+.exclusives_container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: space-evenly;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  width: 80%;
   margin: 0 auto;
-  width: 67px;
-  height: 1px;
-  background-color: hsl(143, 44%, 40%);
+}
+
+.exclusivies_title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.exclusivies_description {
+  color: hsl(0, 0%, 35%);
+  padding: 0 10px;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: auto;
+  margin-bottom: 2rem;
+}
+.exclusivies_img {
+  height: 100px;
+  width: 100px;
+  object-fit: initial;
+  margin-bottom: 1rem;
+}
+.exclusives_card {
+  position: relative;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  transition: 0.3s;
+  background-color: rgb(255, 255, 255);
+}
+// ======================
+// ===============================
+// ================================================
+// ================ MEDIA QUERIES ===============
+@media screen and (max-width: 820px) {
+  .exclusives_container {
+    display: block;
+    width: 100%;
+  }
+  .exclusivies_img {
+    float: left;
+    width: 87px;
+    height: 87px;
+    margin-left: -0.7rem;
+    margin-top: 27px;
+  }
+  .exclusivies_title,
+  .exclusivies_description {
+    width: 90%;
+    min-height: 30px;
+    position: relative;
+    text-align: left;
+    left: 5%;
+  }
+  .exclusives_card span {
+    float: left;
+    margin-left: 32%;
+  }
+}
+
+@media screen and (min-width: 820px) {
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .exclusives_card {
+    grid-template-columns: repeat(1, 180px);
+    justify-content: center;
+  }
 }

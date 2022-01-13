@@ -15,27 +15,18 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     paddingTop: "3rem",
-    // gap: "2rem",
   },
   navigation: {
     margin: "0 auto",
     display: "flex",
+    background: " ",
+    fontSize: "0rem",
     justifyContent: "center",
     flexWrap: "wrap",
+    width: "100%",
+    maxWidth: "540px",
   },
-  tab: {
-    fontWeight: "500",
-    fontSize: "1.24rem",
-    fontFamily: "Roboto",
-    width: "108px",
-    maxWidth: "108px",
-    minWidth: "108px",
-    height: "60px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    cursor: "pointer",
-  },
+  tab: {},
   slider: {
     width: "100%",
     height: "4px",
@@ -46,7 +37,7 @@ const styles = {
     bottom: "0",
     left: 0,
     height: "4px",
-    width: "108px",
+    width: "20%",
     background: "#00754A",
     transition: ".3s",
   },
@@ -59,7 +50,8 @@ const styles = {
     width: "100%",
     background: "#D4E9E2",
     padding: "1rem 0",
-    height: "275px",
+    minHeight: "275px",
+    boxShadow: "inset 0px 6px 7px -4px rgba(0,0,0, .16)",
   },
   page: {
     position: "absolute",
@@ -94,39 +86,37 @@ const Customer = ({ siteTitle }) => {
   const headerValues = [25, 50, 150, 200, 400];
   const positions = {
     25: 0,
-    50: "108px",
-    150: "216px",
-    200: "324px",
-    400: "432px",
+    50: "20%",
+    150: "40%",
+    200: "60%",
+    400: "80%",
   };
 
   return (
-    <section class="customer_snack_section" id="">
+    <section class=" " id="">
       <header style={styles.header}>
         <h2 class="section__title" style={{ marginBottom: "3rem" }}>
-          {" "}
           Get your favorites for free
         </h2>
 
-        <div style={styles.navigation}>
-          {headerValues.map((value) => (
-            <div
-              key={value}
-              style={{
-                ...styles.tab,
-                borderBottomColor: sliderPosition === positions[value] ? "#00754A" : "transparent",
-              }}
-              onClick={() => {
-                setSliderPosition(positions[value]);
-              }}
-              className="pagination-tab"
-            >
-              <p style={styles.tabText}>
-                {value}
-                <span style={styles.star}>★</span>
-              </p>
-            </div>
-          ))}
+        <div style={styles.navigation} className="navigation-menu">
+          <div className="navigation-wrapper">
+            {headerValues.map((value) => (
+              <div
+                key={value}
+                style={{}}
+                onClick={() => {
+                  setSliderPosition(positions[value]);
+                }}
+                className="pagination-tab tab"
+              >
+                <p style={styles.tabText}>
+                  {value}
+                  <span style={styles.star}>★</span>
+                </p>
+              </div>
+            ))}
+          </div>
 
           <div style={styles.slider} className="pagination-slider">
             <div style={{ ...styles.slide, left: sliderPosition }}></div>
@@ -165,7 +155,7 @@ function Page({ page, currentPageByPosition }) {
         className="slider-page-content"
         style={{
           ...styles.page,
-          opacity: currentPageByPosition === "108px" ? 1 : 0,
+          opacity: currentPageByPosition === "20%" ? 1 : 0,
         }}
       >
         <img src={imgB} alt="" style={styles.image} />
@@ -184,7 +174,7 @@ function Page({ page, currentPageByPosition }) {
         className="slider-page-content"
         style={{
           ...styles.page,
-          opacity: currentPageByPosition === "216px" ? 1 : 0,
+          opacity: currentPageByPosition === "40%" ? 1 : 0,
         }}
       >
         <img src={imgC} alt="" style={styles.image} />
@@ -205,7 +195,7 @@ function Page({ page, currentPageByPosition }) {
         className="slider-page-content"
         style={{
           ...styles.page,
-          opacity: currentPageByPosition === "324px" ? 1 : 0,
+          opacity: currentPageByPosition === "60%" ? 1 : 0,
         }}
       >
         <img src={imgD} alt="" style={styles.image} />
@@ -226,7 +216,7 @@ function Page({ page, currentPageByPosition }) {
         className="slider-page-content"
         style={{
           ...styles.page,
-          opacity: currentPageByPosition === "432px" ? 1 : 0,
+          opacity: currentPageByPosition === "80%" ? 1 : 0,
         }}
       >
         <img src={imgE} alt="" style={styles.image} />

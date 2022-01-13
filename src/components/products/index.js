@@ -7,22 +7,22 @@ import imgC from "../../images/3-get-to-free-faster.webp";
 import "./styles.scss";
 
 const Products = ({ siteTitle }) => (
-  <section class="section container" id="products">
+  <section class="section container">
     <h2 class="section__title">Endless Extras</h2>
     <p class="p_description">
       Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards
       and—yes, free coffee.
     </p>
 
-    <div class="products__container  ">
-      <article class="products__card">
-        <img src={imgA} alt="" class="products__img" />
+    <div class="exclusives_container">
+      <article class="exclusives_card">
+        <img src={imgA} alt="" class="exclusivies_img" />
 
-        <h3 class="products__title">Fun freebies</h3>
-        <span class="products__price">
+        <h3 class="exclusivies_title">Fun freebies</h3>
+        <p class="exclusivies_description">
           Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.
-        </span>
-        <br />
+        </p>
+
         <span>
           <a href="" class="link green">
             Learn more
@@ -30,30 +30,29 @@ const Products = ({ siteTitle }) => (
         </span>
       </article>
 
-      <article class="products__card">
-        <img src={imgB} alt="" class="products__img" />
-
-        <h3 class="products__title">Order & pay ahead</h3>
-        <span class="products__price">
-          Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.
-        </span>
-        <br />
+      <article class="exclusives_card">
+        <img src={imgB} alt="" class="exclusivies_img" />
+        <h3 class="exclusivies_title">Order & pay ahead</h3>
+        <p class="exclusivies_description">
+          {" "}
+          Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.{" "}
+        </p>
         <span>
-          <br />
+          {" "}
           <a href="" class="link green">
-            Learn more
-          </a>
+            {" "}
+            Learn more{" "}
+          </a>{" "}
         </span>
       </article>
 
-      <article class="products__card">
-        <img src={imgC} alt="" class="products__img" />
+      <article class="exclusives_card">
+        <img src={imgC} alt="" class="exclusivies_img" />
+        <h3 class="exclusivies_title">Get to free faster</h3>
+        <p class="exclusivies_description">
+          Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.{" "}
+        </p>
 
-        <h3 class="products__title">Get to free faster</h3>
-        <span class="products__price">
-          Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.
-        </span>
-        <br />
         <span>
           <a href="" class="link green">
             Learn more

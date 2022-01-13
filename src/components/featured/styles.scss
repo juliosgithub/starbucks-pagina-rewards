@@ -1,3 +1,28 @@
+.container {
+  max-width: 1366px; /*primeira alt.*/
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* é apenas o padding  */
+.section {
+  padding: 6.5rem 0 1rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.p_description {
+  margin: -2rem auto 2rem auto;
+  max-width: 560px;
+  text-align: center;
+  line-height: 1.7;
+}
+
 /*=============== FEATURED ===============*/
 .featured__container {
   row-gap: 2.5rem;
@@ -13,6 +38,7 @@
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  background-color: black;
   margin-top: -2rem;
   margin-bottom: 1.5rem;
 }
@@ -20,15 +46,15 @@
 .featured__card {
   position: relative;
   text-align: center;
-  padding-top: 2rem 1rem;
-
+  padding-top: 2rem 0.3rem;
   overflow-y: hidden;
   transition: 0.3s;
 }
-
-.featured__img {
+.img_feature {
   height: 60px;
-  margin-bottom: 1rem;
+  width: 60px;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .featured__title,
@@ -57,4 +83,49 @@
 .featured__title,
 .featured__description {
   font-size: 1rem;
+}
+
+/*==========================================================
+==========================================================
+========================== MEDIA QUERIES ===================
+==========================================================*/
+
+@media screen and (min-width: 767px) {
+}
+
+@media screen and (max-width: 850px) {
+  .featured__description {
+    text-align: justify;
+    word-spacing: 2px;
+    line-height: 1.5;
+  }
+  .featured__title,
+  .featured__description {
+    font-size: 1rem;
+  }
+  .img_feature {
+    float: left;
+    column-gap: 3;
+    margin: 1rem 0.7rem;
+    height: 8rem;
+    padding-top: 0rem;
+  }
+  .featured__container {
+    display: block;
+  }
+  .shc-btn {
+    visibility: visible;
+  }
+  .featured__card {
+    display: block;
+    flex-direction: row;
+    width: 200px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .featured__title,
+  .featured__description {
+    text-align: left;
+    margin-left: 0.99rem;
+  }
 }

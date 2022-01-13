@@ -11,6 +11,7 @@ import Payments from "../components/payment";
 import Newsletter from "../components/newsletter";
 import TermsAndPrivacy from "../components/Terms";
 import Footer from "../components/footer";
+import Accordion from "../components/Accordion";
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <Newsletter />
     <TermsAndPrivacy />
     <Footer />
+    <Accordion />
   </Layout>
 );
 
